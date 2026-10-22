@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting | DocuGuide AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html"><span class="logo">✦</span> DocuGuide <b>AI</b></a>
+    <a class="btn btn-light" href="index.html">Home</a>
+  </header>
+
+  <main class="page">
+    <div class="chat-title">
+      <div>
+        <span class="eyebrow">STEP-BY-STEP HELP</span>
+        <h1>Your document sidekick 🤖</h1>
+        <p>Describe your DigiLocker issue to explore general next steps.</p>
+      </div>
+      <span class="demo">● DEMO ASSISTANT</span>
+    </div>
+
+    <section class="chatbox">
+      <div class="chathead">
+        <span class="avatar">✦</span>
+        <div>
+          <strong>DocuGuide Assistant</strong>
+          <small>Friendly document troubleshooting</small>
+        </div>
+      </div>
+
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="bubble bot" id="welcomeMessage">
+          Hey there! 👋 What document issue can I help you understand today?
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <button class="suggestion" type="button" data-suggestion="My document was not found">Document not found</button>
+        <button class="suggestion" type="button" data-suggestion="My details do not match">Details don't match</button>
+        <button class="suggestion" type="button" data-suggestion="The website is not working">Website not working</button>
+        <button class="suggestion" type="button" data-suggestion="I cannot find my marksheet">Can't find marksheet</button>
+      </div>
+
+      <form class="chatrow" id="chatForm">
+        <input
+          class="chat-input"
+          id="chatInput"
+          type="text"
+          maxlength="1000"
+          placeholder="Describe the issue (no private details)…"
+          aria-label="Describe your issue"
+          required>
+        <button class="send" type="submit" aria-label="Send message">➤</button>
+      </form>
+    </section>
+
+    <p class="disclaimer">
+      This is a front-end prototype with sample responses, not a live AI service.
+      Never share passwords, OTPs, full identity numbers or private documents.
+      Confirm important instructions through official DigiLocker help or the issuing authority.
+    </p>
+
+    <a class="back" href="index.html">← Back to home</a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <small>DocuGuide AI · Student project prototype</small>
+  </footer>
+</body>
+</html>
