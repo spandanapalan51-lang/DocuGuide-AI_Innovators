@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : "bot-message bubble bot";
 
     // textContent prevents returned text from being interpreted as HTML.
-    bubble.textContent = String(text ?? "");
+    bubble.textContent = String(text ?? "").replace(/\*\*/g, "");
     messages.appendChild(bubble);
     messages.scrollTop = messages.scrollHeight;
   }
